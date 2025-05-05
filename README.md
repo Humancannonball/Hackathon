@@ -3,6 +3,23 @@
 ## Project Overview
 This hackathon project develops a system where drones provide aerial surveillance to optimize ground robot navigation. The system processes drone imagery to detect obstacles and terrain features, then calculates optimal paths for ground robots to follow, with continuous updates as environmental conditions change.
 
+## Project Directory Structure
+```
+Hackathon/
+├── README.md                # Main project docu`mentation
+├── ai/                      # AI-related code and resources
+│   ├── models/              # Model definitions and weights
+│   ├── data/                # Dataset storage and processing
+│   └── pipeline/            # Video processing pipeline
+├── algorithms/              # Path planning algorithms
+│   ├── path_planning/       # Core path planning implementations
+│   └── map_representation/  # Environmental map data structures
+├── integration/             # Integration code connecting AI and algorithms
+│   └── visualization/       # Visualization tools for demo
+└── design/                  # Design documents, diagrams, and specifications
+    └── system/              # System architecture diagrams
+```
+
 ## Team Structure & Tasks
 
 ### AI Engineer 1
