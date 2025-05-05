@@ -64,20 +64,20 @@ Hackathon/
 1. **Input**: Video frames from drone camera
 2. **Processing**: AI model for object/obstacle detection and terrain classification
 3. **Output Format**:
-   ```json
-   {
-     "frame_id": 1234,
-     "timestamp": "2023-11-15T14:22:36.123Z",
-     "obstacles": [
-       {"type": "person", "confidence": 0.92, "x1": 120, "y1": 340, "x2": 180, "y2": 480},
-       {"type": "vehicle", "confidence": 0.87, "x1": 250, "y1": 100, "x2": 350, "y2": 200}
-     ],
-     "terrain": [
-       {"type": "pavement", "confidence": 0.95, "polygon": [[0,0], [640,0], [640,120], [0,120]]},
-       {"type": "grass", "confidence": 0.88, "polygon": [[100,200], [300,200], [300,400], [100,400]]}
-     ]
-   }
-   ```
+```json
+    {
+      "frame_id": 1234,
+      "timestamp": "2023-11-15T14:22:36.123Z",
+      "obstacles": [
+        {"type": "person", "confidence": 0.92, "x1": 120, "y1": 340, "x2": 180, "y2": 480},
+        {"type": "vehicle", "confidence": 0.87, "x1": 250, "y1": 100, "x2": 350, "y2": 200}
+      ],
+      "terrain": [
+        {"type": "pavement", "confidence": 0.95, "polygon": [[0,0], [640,0], [640,120], [0,120]]},
+        {"type": "grass", "confidence": 0.88, "polygon": [[100,200], [300,200], [300,400], [100,400]]}
+      ]
+    }
+    ```
 
 ### Algorithm Requirements
 - A* or RRT algorithms for path planning
