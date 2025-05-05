@@ -7,9 +7,10 @@ This document outlines the detailed plan for implementing the AI components of o
 | Dataset | Description | Advantages | Limitations | Implementation Difficulty | Suitability |
 |---------|-------------|------------|------------|---------------------------|-------------|
 | [UAVid Dataset](https://uavid.nl/) | 4K UAV videos with 8 semantic categories (Building, Road, Static car, Tree, Low vegetation, Human, Moving car, Background) | - High resolution<br>- Includes moving objects<br>- Street scene context<br>- Video sequences | - Limited to 8 categories<br>- License restrictions | Medium | ★★★★★ |
-| [Aerial Semantic Segmentation Drone Dataset](https://www.kaggle.com/datasets/bulentsiyah/semantic-drone-dataset) | Drone imagery with pixel-level annotations | - Ready for semantic segmentation<br>- Easily accessible via Kaggle | - Limited scene diversity | Low | ★★★★☆ |
+| [Aerial Semantic Segmentation Drone Dataset](https://www.kaggle.com/datasets/bulentsiyah/semantic-drone-dataset) | Drone imagery with pixel-level annotations | - Ready for semantic segmentation<br>- Easily accessible via Kaggle | - Limited scene diversity | Low | ★★★★★ |
 | [DOTA](https://captain-whu.github.io/DOTA/dataset.html) | Large-scale dataset for object detection in aerial images | - 15-18 object categories<br>- Oriented bounding box annotations<br>- Multiple versions available | - Focus on object detection, not terrain<br>- Complex annotation format | High | ★★★☆☆ |
 | [AID](https://captain-whu.github.io/AID/) | Aerial scene classification dataset | - 30 scene types<br>- Good for terrain classification | - Scene-level labels, not pixel-level | Medium | ★★★☆☆ |
+
 
 **Recommendation:** Use UAVid as primary dataset for terrain classification and the Kaggle Drone Dataset as supplementary. For specific object detection tasks, incorporate DOTA selectively.
 
