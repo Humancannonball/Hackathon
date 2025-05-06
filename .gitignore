@@ -1,1 +1,6 @@
-ai/dataset/
+ai/dataset/\
+.venv/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
